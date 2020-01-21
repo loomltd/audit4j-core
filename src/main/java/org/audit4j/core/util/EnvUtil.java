@@ -53,11 +53,11 @@ public class EnvUtil {
         // this code should work at least until JDK 10 (assuming n parameter is
         // always 6 or more)
         for (int i = 0; i < 7; i++) {
-            //Till JDK 1.8 versioning is 1.x after 10 its will JDK N.x
+            //Till JDK 1.8 versioning is 1.x after 10 its will JDK N
             if(n + i < 9)
             versionList.add("1." + (n + i));
             else
-            versionList.add((n + i)+".");
+            versionList.add(String.valueOf(n + i));
         }
 
         String javaVersion = System.getProperty("java.version");
